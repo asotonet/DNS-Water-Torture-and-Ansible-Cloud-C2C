@@ -6,7 +6,7 @@ import uuid  # Agregamos la importación de uuid
 from concurrent.futures import ThreadPoolExecutor
 
 # Configura tus credenciales de Digital Ocean
-API_TOKEN = "dop_v1_d1b6ec274a64cb9951b57a96511d18df690cea070022edf3a6fa7939f6ad006f"
+API_TOKEN = "dop_v1_d1b6ec274a64cb9951b57a96511d18df690cea070022edf3a6fa7939f6"
 CSV_FILE_PATH = "ips_droplets.csv"
 SSH_KEY_ID = 40837199
 # Configura otros parámetros
@@ -14,10 +14,6 @@ DROPLET_COUNT = 2
 DROPLET_SIZE = "s-2vcpu-4gb-120gb-intel"
 REGIONS = ["nyc3"]  # Puedes agregar más regiones según tus preferencias
 #REGIONS = ["nyc3", "sfo2", "lon1"]  # Puedes agregar más regiones según tus preferencias
-
-
-# Ingresa la contraseña de PSK cuando se solicite
-#PSK = getpass.getpass(prompt="Ingrese la contraseña PSK: ")
 
 def create_droplet(region):
     headers = {
