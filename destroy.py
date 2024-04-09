@@ -2,7 +2,7 @@ import requests
 import csv
 
 # Configura tus credenciales de Digital Ocean
-API_TOKEN = "dop_v1_d1b6ec274a64cb9951b57a96511d18df690cea070022edf3a6fa7939f6ad006f"
+API_TOKEN = "dop_v1_d1b6ec274a64cb9951b57a96511d18df690cea070022edf3a6f"
 
 def destroy_droplet(droplet_name):
     headers = {
