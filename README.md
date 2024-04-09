@@ -4,7 +4,7 @@ Estoy en la busqueda de ser un experto en telemática, seguridad y automatizaci�
 Considero importante realizar contribuciones para la comunidad que sean de valor.
 
 
-# Python DNS Water Trottle and Ansible Cloud Instances C2C
+# Python DNS Water Torture and Ansible Cloud Instances C2C
 
 Este codigo está completamente hecho en Python, su uso es esclusivamente con fines educativos y demostrativos, para comprender como los atacantes realizan ataques ejecutan ataques DDoS a los servicios DNS.
 
