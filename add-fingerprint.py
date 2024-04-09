@@ -1,7 +1,7 @@
 import subprocess
 import csv
 import os
-
+ 
 def add_host_to_known_hosts(ip_address):
     # Obtener el fingerprint del host
     ssh_keyscan_process = subprocess.Popen(["ssh-keyscan", ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
