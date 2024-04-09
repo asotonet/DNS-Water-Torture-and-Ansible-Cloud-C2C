@@ -21,13 +21,13 @@ Este codigo está completamente hecho en Python, su uso es esclusivamente con fi
 Clona el proyecto
 
 ```bash
-  git clone https://github.com/asotonet/DNS-Water-Trottle-and-Ansible-Cloud-C2C.git
+  git clone https://github.com/asotonet/DNS-Water-Torture-and-Ansible-Cloud-C2C.git
 ```
 
 Ve al directorio
 
 ```bash
-  cd DNS-Water-Trottle-and-Ansible-Cloud-C2C
+  cd DNS-Water-Torture-and-Ansible-Cloud-C2C
 ```
 Install dependencies
 
