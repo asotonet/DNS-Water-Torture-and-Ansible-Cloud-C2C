@@ -1,5 +1,5 @@
 import csv
-
+ 
 csv_file_path = "ips_droplets.csv"
 inventory_file_path = "inventory.ini"
 
