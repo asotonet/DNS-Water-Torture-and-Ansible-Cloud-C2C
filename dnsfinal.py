@@ -46,7 +46,7 @@ if __name__ == "__main__":
     domain_to_query = ""  # Dominio a consultar
     input_csv_file = "subdomains.csv"  # Nombre del archivo CSV
     source_ips_file = "source_ips.csv"  # Nombre del archivo CSV con las direcciones IP de origen
-    resolver_ip = "181.78.113.169"  # Dirección IP del servidor DNS target
+    resolver_ip = "192.168.18.8"  # Dirección IP del servidor DNS target
 
     subdomains_to_query = read_subdomains_from_csv(input_csv_file)
     source_ips_to_use = read_source_ips_from_csv(source_ips_file)
