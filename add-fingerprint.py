@@ -8,7 +8,7 @@ def add_host_to_known_hosts(ip_address):
     stdout, stderr = ssh_keyscan_process.communicate()
 
     if ssh_keyscan_process.returncode == 0:
-        # Expandir la tilde en la ruta del archivo known_hosts
+        # Ruta del archivo known_hosts
         known_hosts_path = os.path.expanduser("~/.ssh/known_hosts")
         
         # Agregar el fingerprint al archivo known_hosts
@@ -27,7 +27,7 @@ def read_ips_from_csv(csv_file_path):
     return ips
 
 if __name__ == "__main__":
-    csv_file_path = "ips_droplets.csv"  # Reemplaza con la ruta correcta a tu archivo CSV
+    csv_file_path = "ips_droplets.csv"  # Archivo CSV
     ip_addresses = read_ips_from_csv(csv_file_path)
 
     for ip_address in ip_addresses:
