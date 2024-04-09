@@ -1,0 +1,51 @@
+---
+- name: Create archivo Python y ejecutar ataque
+  hosts: droplets
+  become: true
+  gather_facts: true
+
+  tasks:
+  #  - name: Instalar pip
+  #    apt:
+  #      name: python3-pip
+  #    when: ansible_os_family == 'Debian'
+
+ #   - name: Instalar Scapy Librería de python
+ #     pip:
+ #       name: scapy
+
+    - name: Copiar el script create.py a los hosts
+      copy:
+        src: create.py
+        dest: /root/create.py
+        mode: 0755
+
+    - name: Ejecutar el script create.py en paralelo
+      shell: "python3 /root/create.py"
+
+    - name: Copiar el script randomip.py a los hosts
+      copy:
+        src: randomip.py
+        dest: /root/randomip.py
+        mode: 0755
+
+    - name: Ejecutar el script randomip.py en paralelo
+      shell: "python3 /root/randomip.py"
+
+    - name: Copiar el script fastdns.py a los hosts
+      copy:
+        src: fastdns.py
+        dest: /root/fastdns.py
+        mode: 0755
+
+    - name: Ejecutar el script fastdns.py en paralelo
+      shell: "seq 1 10 | xargs -n 1 -P 4 python3 /root/fastdns.py"
+
+    - name: Copiar el script dnsfinal.py a los hosts
+      copy:
+        src: dnsfinal.py
+        dest: /root/dnsfinal.py
+        mode: 0755
+
+    - name: Ejecutar el script dnsfinal.py en paralelo
+      shell: "seq 1 10 | xargs -n 1 -P 2 python3 /root/dnsfinal.py"
